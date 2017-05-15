@@ -27,7 +27,7 @@
       display: none;
   }
   
-  @media screen and (max-width: 47.9275em) {
+  @media (max-width: 47.9275em) {
       .topnav li a {
           display: none;
       }
@@ -44,7 +44,7 @@
       }
   }
   
-  @media screen and (max-width: 47.9275em) {
+  @media(max-width: 47.9275em) {
       .topnav.responsive {
           position: relative;
       }
