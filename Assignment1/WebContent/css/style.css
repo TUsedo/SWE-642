@@ -17,7 +17,7 @@ header {
 }
 
 .top-row {
-    padding: 1.44em;
+    padding: 1.45em;
     margin: 0px;
 }
 
@@ -85,7 +85,7 @@ header {
     }
 }
 
-.nav_column {
+#nav_site {
     background: transparent;
     border-color: transparent;
     margin-bottom: 0px;
@@ -94,7 +94,7 @@ header {
     padding-right: 10px;
 }
 
-.nav_column .gmu_nav .navigation_link {
+#nav_site a {
     padding: 14px 5px;
     color: #184e2d;
     text-decoration: none;
@@ -103,18 +103,24 @@ header {
     font-weight: bold;
 }
 
-.gmu_nav {
+#nav_site a:hover {
+    color: #e2a82b;
+    background: transparent;
+    border-color: transparent;
+}
+
+#nav_site ul {
     float: right;
     padding-top: 25px;
 }
 
 @media(max-width:47.9275em) {
-    .gmu_nav {
+    .nav_site_ul {
         max-width: 100%;
         float: unset;
         margin-top: -1em;
     }
-    .gmu_nav li {
+    #nav_site ul li {
         display: inline;
     }
 }
