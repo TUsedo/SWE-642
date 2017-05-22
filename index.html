@@ -6,8 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="Normalize.css">
     <link rel="stylesheet" href="menuStyles.css">
-    <script src="jQueryv2.1.3.js" async></script>
-    <script src="menu.js" async></script>
+    <script src="jQueryv2.1.3.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -16,7 +15,7 @@
         <div class="nav-container">
             <nav>
                 <div class="nav-mobile">
-                    <i></i><a id="nav-toggle" href="#">Menu<i></i></a>
+                    <a id="nav-toggle" href="#">Menu<i></i></a>
                 </div>
                 <ul class="nav-list">
                     <li>
@@ -49,26 +48,7 @@
             </nav>
         </div>
     </section>
-    <script>
-        (function($) {
-            $(function() {
-                $('nav ul li > a:not(:only-child)').click(function(e) {
-                    $(this).siblings('.nav-dropdown').toggle();
-                    $('.nav-dropdown').not($(this).siblings()).hide();
-                    e.stopPropagation();
-                });
-                $('html').click(function() {
-                    $('.nav-dropdown').hide();
-                });
-            });
-            document.querySelector('#nav-toggle').addEventListener('click', function() {
-                this.classList.toggle('active');
-            });
-            $('#nav-toggle').click(function() {
-                $('nav ul').toggle();
-            });
-        }(jQuery));
-    </script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
