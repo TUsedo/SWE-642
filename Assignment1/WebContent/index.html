@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menuStyles.css">
 </head>
 
 <body>
@@ -46,18 +47,84 @@
                     </div>
                 </div>
             </div>
-            <div class="row no-pad menu-row">
-                <nav class="menu col-xs-12">
-                    <ul class=""></ul>
-                </nav>
+            <div class="row no-pad navigation">
+                <div class="nav-container">
+                    <nav class="menu col-xs-12">
+                        <div class="nav-mobile">
+                            <a id="nav-toggle" href="#">Menu<i></i></a>
+                        </div>
+                        <ul class="nav-list">
+                            <li>
+                                <a href="#">Home &#x25be;</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="#">Web Design</a>
+                                    </li>
+                                    <li>
+                                        <a class="submenu" href="#">Web Development &#x25b8;</a>
+                                        <ul class="nav-dropdown-2">
+                                            <li>
+                                                <a href="#">PHP Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Java Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Angular Development</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Graphic Design</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#!">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Services &#x25be;</a>
+                                <ul class="nav-dropdown">
+                                    <li>
+                                        <a href="#">Web Design</a>
+                                    </li>
+                                    <li>
+                                        <a class="submenu" href="#">Web Development &#x25b8;</a>
+                                        <ul class="nav-dropdown-2">
+                                            <li>
+                                                <a href="#">PHP Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Java Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Angular Development</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Graphic Design</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
 
         </header>
     </div>
 
-    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="tether/js/tether.min.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 
 </html>

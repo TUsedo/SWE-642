@@ -115,7 +115,7 @@ header {
 }
 
 @media(max-width:47.9275em) {
-    .nav_site_ul {
+    #nav_site ul {
         max-width: 100%;
         float: unset;
         margin-top: -1em;
