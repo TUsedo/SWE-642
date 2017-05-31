@@ -31,7 +31,7 @@
 }
 
 .menu ul li ul li {
-    min-width: 215px;
+    min-width: 225px;
 }
 
 .menu ul li ul li a {
@@ -61,13 +61,15 @@
 .nav-dropdown {
     position: absolute;
     display: none;
+    z-index: 100;
 }
 
 .nav-dropdown-2 {
     position: absolute;
-    left: 190px;
+    left: 225px;
     top: 0px;
     display: none;
+    z-index: 100;
 }
 
 .nav-mobile {
@@ -162,6 +164,7 @@
     height: 50px;
     background: #333333;
     margin: 0px;
+    z-index: 1;
 }
 
 .nav-container {
