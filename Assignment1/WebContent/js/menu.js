@@ -1,6 +1,6 @@
 (function($) {
     $(function() {
-        $('nav ul li > a:not(:only-child)').click(function(e) {
+        $('.nav-list li > a:not(:only-child)').click(function(e) {
             $(this).siblings('.nav-dropdown').toggle();
             var target = $(e.target);
             if (!target.is(".submenu")) {

@@ -12,9 +12,10 @@
 .menu ul li {
     float: left;
     position: relative;
+    
 }
 
-.menu ul li a {
+.nav-list li a {
     display: block;
     padding: 0 20px;
     line-height: 50px;
@@ -30,23 +31,29 @@
 }
 
 .menu ul li ul li {
-    min-width: 190px;
+    min-width: 215px;
 }
 
 .menu ul li ul li a {
-    padding: 15px;
-    line-height: 15px;
+    padding: 0.5em 1.2em;
+    line-height: 1.5em;
     font-size: 1em;
     background: #211f1f;
 }
 
+.menu ul li a:not(:only-child):after,
+.menu ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+
 .nav-dropdown-2 li {
-    min-width: 190px;
+    min-width: 215px;
 }
 
 .nav-dropdown-2 li a {
-    padding: 15px;
-    line-height: 15px;
+    padding: 0.5em 1.2em;
+    line-height: 1.5em;
     font-size: 1em;
     background: #0b0a0a;
 }
@@ -54,7 +61,6 @@
 .nav-dropdown {
     position: absolute;
     display: none;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
 .nav-dropdown-2 {
@@ -62,7 +68,6 @@
     left: 190px;
     top: 0px;
     display: none;
-    /*box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);*/
 }
 
 .nav-mobile {
@@ -107,6 +112,7 @@
     transform: rotate(-135deg);
     margin-bottom: -4px;
 }
+
 
 @media only screen and (max-width: 768px) {
     .nav-mobile {
