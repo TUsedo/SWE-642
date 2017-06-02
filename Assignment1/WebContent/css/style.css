@@ -71,7 +71,7 @@ header {
     display: inline;
 }
 
-@media (max-width:47.9275em) {
+@media (max-width:768px) {
     .search_form {
         max-width: 100%;
         float: unset;
@@ -114,9 +114,7 @@ header {
     padding-top: 25px;
 }
 
-
-
-@media(max-width:47.9275em) {
+@media(max-width:768px) {
     #nav_site ul {
         max-width: 100%;
         float: unset;
@@ -131,14 +129,14 @@ header {
     margin: 0px;
 }
 
-.slider{
+.slider {
     max-width: 1200px;
     max-height: 420px;
     margin: 0px;
     z-index: -1;
 }
 
-.content{
+.content {
     max-width: 1200px;
     margin: 0px;
 }
@@ -148,13 +146,56 @@ header {
     padding: 20px 0px;
 }
 
-.index-content h3{
+.index-content h2 {
     color: red;
 }
 
-.index-content p{
+.index-content p {
     font-size: 1.5em;
     font-weight: bold;
 }
 
+.page-header {
+    margin: 0px;
+    padding: 5px 15px;
+    background-color: #f9ab4f;
+}
 
+.page-header h2 {
+    font-size: 1.75em;
+    line-height: 1.5em;
+    color: black;
+}
+
+.main-content {
+    margin: 0px;
+}
+
+.side-navigation ul li a {
+    border-radius: 0px;
+    color: white;
+}
+ @media only screen and (max-width:768px) {
+     .side-navigation{
+         margin: 0px ;
+         padding: 0px 75px; 
+     }
+ }
+  @media only screen and (max-width:1200px) and (min-width:768px) {
+     .side-navigation{
+         width: 25%;
+     }
+ }
+
+.side-navigation ul {
+    padding-left: 1px;
+    margin-top: 20px;
+}
+
+.side-navigation ul li {
+    background: #00909e;    
+}
+
+.side-navigation ul li :hover {
+    background: #00BED1;
+}
