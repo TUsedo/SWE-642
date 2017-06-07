@@ -24,13 +24,13 @@
 }
 
 .index-content p {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
 }
 
 .index-content a {
     color: #184e2d;
-    border-bottom: 2px dotted;
+    border-bottom: 1px dotted;
     text-decoration: none;
 }
 .index-content a:hover {

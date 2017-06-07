@@ -6,8 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/menuStyles.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT Serif">
 </head>
 
 <body>
@@ -47,7 +50,7 @@
                     </div>
                 </div>
             </div>
-           <div class="row no-pad navigation">
+            <div class="row no-pad navigation">
                 <div class="nav-container">
                     <nav class="menu col-xs-12">
                         <div class="nav-mobile">
@@ -59,7 +62,7 @@
                                 <a>About</a>
                                 <ul class="nav-dropdown">
                                     <li>
-                                        <a href="about.html">Department</a>
+                                        <a href="about.html">Department Overview</a>
                                     </li>
                                     <li>
                                         <a href="#">Contact Info.</a>
@@ -172,28 +175,260 @@
             </div>
         </header>
         <div class="content">
-            <div class="page-content">
-                <div class="page-header row">
-                    <div class="col-xs-12">
-                        <h2>About the Department</h2>
-                    </div>
-                </div>
-                <div class="row main-content">
-                    <div role="navigation" class="col-xs-12 col-lg-3 col-md-2 col-sm-3 side-navigation">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li class="active"><a href="#">The Department</a></li>
-                            <li><a href="#">Contact Info.</a></li>
-                            <li><a href="#">Visit the Department</a></li>
-                            <li><a href="#">Fast Facts</a></li>
+            <div class="breadcrumb-row row">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">About</li>
+                    (Bootstrap <code>.breadcrumb</code> class implementation)
+                </ol>
+            </div>
+            <div class="row main-content">
+                <h3> Bootstrap <code>.pills, .nav-pills, .nav-stacked</code> class implementation.</h3>
+                <div id="page-content">
+                    <section id="side-navigation" class="col-xs-12 col-lg-3 col-md-2 col-sm-3">
+                        <ul class="nav-pills nav nav-stacked">
+                            <li class="active">
+                                <a href="#department" data-toggle="tab">CS Department</a>
+                            </li>
+                            <li>
+                                <a href="#contact-info" data-toggle="tab">Contact Info.</a>
+                            </li>
+                            <li>
+                                <a href="#department-visit" data-toggle="tab">Visit the Department</a>
+                            </li>
+                            <li>
+                                <a href="#fast-facts" data-toggle="tab">Fast Facts</a>
+                            </li>
                         </ul>
-                    </div>
+                    </section>
+                    <section class="tab-content col-lg-6 col-md-7 col-sm-6 col-xs-12 section-article">
+                        <article class="tab-pane active" id="department">
+                            <p>
+                                <strong>Welcome to the website of the Computer Science Department at 
+                                George Mason University!</strong> With 50 faculty members,
+                                the CS Department at Mason is the largest department in the
+                                <a href="http://volgenau.gmu.edu">Volgenau School of Engineering</a>, one of the largest
+                                departments on campus, and one of the largest CS departments in the Commonwealth of Virginia.
+                            </p>
+                            <p>Today, not only are computing devices pervasive in society, but computational methods are used
+                                in almost every field of endeavor ranging from the arts and humanities to the hard sciences
+                                and engineering. Given the importance of computing in today's world,
+                                <strong>we strongly support the goal of 
+                                    <a href="/academics/computing-for-all/">"Computing for All"</a>
+                                </strong>, i.e., to providing a diverse array of programs
+                                and courses in computing to students from all backgrounds and of all levels.</p>
+                            <p>The department offers
+                                <a href="/prospective-students/undergraduate-programs/">two Bachelor of Science programs</a>                                with a total enrollment of over 1100 students:
+                                <span> the B.S. in Computer Science and the inter-disciplinary B.S. in Applied Computer Science; 
+                                     <a href="/prospective-students/ms-programs/">four M.S. programs</a> 
+                                     in Computer Science, Information Systems, Information Security and Assurance, 
+                                     and Software Engineering with a total enrollment of 400 students; and a 
+                                     <a href="/prospective-students/phd-program/">Ph.D. program in Computer Science</a> 
+                                     with over 100 students. The department's faculty also teach and participate in the 
+                                     inter-disciplinary M.S. in Data Analytics Engineering and the Ph.D. in Information Technology 
+                                     offered by the Volgenau School of Engineering.
+                                </span>
+                            </p>
+                            <p>
+                                <span>
+                                    The department has a <a href="/directory/by-category/faculty">world-class faculty
+                                    </a><strong> with <a href="/research/">research strengths</a> 
+                                    in almost all areas of computing, and a strong commitment to teaching</strong>. 
+                                    Our faculty are engaged in leading edge research in their respective fields and have authored 
+                                    <a href="/research/books-and-software/">widely used textbooks and software.</a> 
+                                    Our faculty's excellence is reflected in the 
+                                    <a href="/about/faculty-awards/">list of awards</a> 
+                                    received for research (12 CAREER/Young Investigator awards, 7 Mason Emerging Researcher awards) 
+                                    and teaching (6 Mason Excellence in Teaching awards).
+                                </span>
+                            </p>
+                            <p>
+                                <span></span>Several members of the department's faculty are actively engaged in
+                                <a href="/research/campus-collaborations/">inter-disciplinary research collaborations</a>                                with colleagues from all over campus and other universities. Indeed inter-disciplinary collaboration
+                                in research and education is a key component of our departmental vision and strategic direction
+                                for the future.
+                            </p>
+                            <p>
+                                The department has an active
+                                <a href="/community/advisory-board/">Industrial Advisory Board</a> consisting of industry
+                                leaders -- many of whom are Mason alumni - who help the department in building strong ties
+                                and engaging with <a href="/community/">alumni, local industry and government agencies, 
+                                and local K-12 schools</a>. The members of the Advisory Board also provide the department
+                                with critical guidance and feedback so that our courses and programs reflect the state of
+                                the art in computing technology, and who help us with our goal of graduating students that
+                                are well prepared to meet the workforce needs of the state and the nation.
+                            </p>
+                            <p>
+                                Last but not least, the department is committed to the
+                                <a href="http://vision.gmu.edu">Mason vision </a> of inclusiveness and accessibilty and to
+                                efforts that increase the representation of women and underrepresented minorites in our programs
+                                and in the field of computing, in general.
+                            </p>
+                            <p>
+                                I invite you to: come visit and explore our programs as a current or prospective student; partner with us to help provide
+                                talented students for your company or organization; keep us posted of your accomplishments
+                                as an alumnus; explore collaborations either in research or education; and bring any new
+                                initiatives you may have in mind to our attention. Please explore our website to learn more
+                                about the CS department at Mason!
+                            </p>
+
+                        </article>
+                        <article id="contact-info" class="tab-pane">
+                            <h3>General contact Information</h3>
+                            <address>
+                                Department of Compueter Science<br> 
+                                George Mason University<br> 
+                                4400 University Drive<br>                                
+                                Fairfax VA 22030
+                            </address>
+                            <p>
+                                <strong>Phone</strong>: 703-993-xxxx<br>
+                                <strong>Fax</strong>: 703-993-xxxx
+                            </p>
+                            <p>
+                                For questions or information about the department you may e-mail us at one of the addressses
+                                below:
+                            </p>
+                            <ul>
+                                <li>Information about PhD program: 
+                                    <a href="mailto:csphd@gmu.edu"> csphd@gmu.edu</a>
+                                </li>
+                                <li>Information about MS program: 
+                                    <a href="mailto:csgrad@gmu.edu"> csgrad@gmu.edu</a>
+                                </li>
+                                <li>Information about Undergraduate program: 
+                                    <a href="mailto:csug@gmu.edu"> csug@gmu.edu</a>
+                                </li>
+                                <li>General Information: 
+                                    <a href="mailto:csinfo@gmu.edu"> csinfo@gmu.edu</a>
+                                </li>
+                            </ul>
+                            <h3 style="margin-top: 30px;">
+                                Administrative Contacts
+                            </h3>
+                            <h4 style="margin-top: 20px;">
+                                Administration
+                            </h4>   
+                            <table class="table table-striped table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td class="table-name">Sanjeev Setia</td>
+                                        <td>Chair</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Jan Allbeck</td>
+                                        <td>Associate Chair, Director of Undergraduate Programs</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Pearl Wang</td>
+                                        <td>Associate Chair</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Hakan Aydin</td>
+                                        <td>Program Director, PhD CS program</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Alex Brodsky</td>
+                                        <td>Program Director, MS Information Systems program</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Zoran Duric</td>
+                                        <td>Program Director, MS CS program</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Jeff Offutt</td>
+                                        <td>Program Director, MS Software Engineering program</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Duminda Wijeskera</td>
+                                        <td>Program Director, MS Information Security &amp; Assurance program</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h4 style="margin-top: 20px;">
+                                Staff
+                            </h4>   
+                            <table class="table table-striped table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td class="table-name">Michele Pieper</td>
+                                        <td>Assistant to the Chair and Office Manager</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Ryan Lucas</td>
+                                        <td>Graduate Program Specialist, PhD CS and MS CS programs</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Anne Hamill</td>
+                                        <td>Graduate Program Specialist, MS-ISYS, MS-ISA, and MS-SWE programs</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Kara Smith</td>
+                                        <td>Undergraduate Student Advisor</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-name">Katie Doyle</td>
+                                        <td>	Undergraduate Program Specialist</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                        <article class="tab-pane" id="department-visit">
+
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </article>
+                        <article class="tab-pane" id="fast-facts">
+
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </article>
+                    </section>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="row no-padding">
+                <div class="no-padding col-sm-3 col-xs-6">
+                    <div id="gmu-logo">
+                        <a class="cs-img-link" href="https://www2.gmu.edu/">
+                        <img src="images/gmu_footer_logo.png" alt="GMU Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="no-padding col-sm-3 col-xs-6">
+                    <div id="address">
+                        <address>
+                            Department of Computer Science <br> 
+                            Nguyen Engineering Building<br> 
+                            4400 University Drive<br>                            
+                            Fairfax, VA 22030
+                        </address>
+                    </div>
+                </div>
+                <div class="no-padding col-sm-3 col-xs-6">
+                    <div id="contact">
+                        <p>
+                            <a href="#contact-info" data-toggle="tab" onclick="location.reload()">Contact</a><br> 703-993-xxxx
+                            (P) <br> 703-993-xxxx (F)
+                        </p>
+                    </div>
+                </div>
+                <div class="no-padding col-sm-3 col-xs-6">
+                    <div id="footer-links">
+                        <p>
+                            <a href="#">Privacy statement</a><br><a href="#">Student Consumer Information</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-     <script src="js/jquery-3.2.1.min.js"></script>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="tether/js/tether.min.js"></script>
     <script src="js/menu.js"></script>
 </body>
+
 </html>

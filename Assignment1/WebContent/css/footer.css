@@ -15,11 +15,11 @@ footer {
     margin-bottom: 1em;
 }
 
-#address p,
+#address address,
 #contact p,
 #footer-links p {
     margin-top: 1em;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 #contact a,
