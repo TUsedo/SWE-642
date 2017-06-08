@@ -35,3 +35,23 @@ footer {
         margin-bottom: 1em;
     }
 }
+
+/*Link to navigate to the top of the page*/
+#to-top {
+    position: fixed;
+    bottom: 40px;
+    background: #ebc46e;
+    left: 93%;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+#to-top span {
+    top: 12px;
+    left: 9px;
+    color: #333;
+    font-size: 26px;
+}
